@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class FoodScreen extends StatelessWidget {
-  const FoodScreen({super.key});
+class TovaryScreen extends StatelessWidget {
+  const TovaryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,7 @@ class FoodScreen extends StatelessWidget {
                   ],
                 ),
                 width: 360,
-                height: 380,
+                height: 400,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -64,7 +64,7 @@ class FoodScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Bellagio Coffee"),
+                          Text("Hair"),
                           SizedBox(
                             width: 8,
                           ),
@@ -80,14 +80,14 @@ class FoodScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Image.asset(
-                          "assets/pizza.png",
-                          width: 110.w,
-                          height: 110.h,
+                          "assets/h1.png",
+                          width: 90.w,
+                          height: 90.h,
                         ),
                         const Padding(
                           padding: EdgeInsets.all(15.0),
                           child: Text(
-                            'Том ям ',
+                            'Hadat cosmetics',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.w500),
                           ),
@@ -96,7 +96,34 @@ class FoodScreen extends StatelessWidget {
                         const Padding(
                           padding: EdgeInsets.all(15.0),
                           child: Text(
-                            '250 C',
+                            '1900 C',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          "assets/h2.png",
+                          width: 90.w,
+                          height: 90.h,
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(15.0),
+                          child: Text(
+                            'Hadat cosmetics',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        const Spacer(),
+                        const Padding(
+                          padding: EdgeInsets.all(15.0),
+                          child: Text(
+                            '2000 C',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.w500),
                           ),
@@ -105,15 +132,80 @@ class FoodScreen extends StatelessWidget {
                     ),
                     Center(
                       child: Buttomm2(
-                        myIcon: Icon(Icons.plus_one),
-                        text: "Добавки",
-                        color: Color(0xffF8F8F8),
-                        colorbg: Color(0xffF8F8F8),
-                        colortx: Colors.black,
+                        text: "Заказать",
+                        color: Color(0xffF72055),
+                        colorbg: Color(0xffF72055),
+                        colortx: Colors.white,
+                        text2: "3900 C",
+                        colortx2: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10.h,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.10),
+                      blurRadius: 5,
+                    ),
+                  ],
+                ),
+                width: 360,
+                height: 270,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text("Hair"),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Icon(
+                            Icons.arrow_forward_ios_rounded,
+                            size: 15,
+                          ),
+                        ],
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
+                    const Divider(),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          "assets/h3.png",
+                          width: 80.w,
+                          height: 80.h,
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(15.0),
+                          child: Text(
+                            'L’Oreal Paris\nElseve',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        const Spacer(),
+                        const Padding(
+                          padding: EdgeInsets.all(15.0),
+                          child: Text(
+                            '600 C',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                      ],
                     ),
                     Center(
                       child: Buttomm2(
@@ -121,7 +213,7 @@ class FoodScreen extends StatelessWidget {
                         color: Color(0xffF72055),
                         colorbg: Color(0xffF72055),
                         colortx: Colors.white,
-                        text2: "250 C",
+                        text2: "600 C",
                         colortx2: Colors.white,
                       ),
                     )

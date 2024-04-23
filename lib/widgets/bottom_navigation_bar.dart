@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:malina_project/home.dart';
-import 'package:malina_project/screens/basket.dart';
+import 'package:malina_project/screens/choice.dart';
 import 'package:malina_project/screens/qr_code.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int currentTab = 0;
   final List<Widget> screen = [
     const HomeScreen(),
-    const QrCodeScreen(),
+    // const QrCodeScreen(),
   ];
   final PageStorageBucket bucket = PageStorageBucket();
   Widget currentScreen = const Home();
@@ -29,7 +29,13 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color(0xffF72055),
-        onPressed: () {},
+        onPressed: () {
+          // Navigator.of(context).push(
+          //   MaterialPageRoute(
+          //     builder: (context) => Second(),
+          //   ),
+          // );
+        },
         child: const Icon(
           Icons.grid_view_rounded,
           color: Colors.white,

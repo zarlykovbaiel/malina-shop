@@ -22,7 +22,7 @@ class BaseContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       width: 320.w,
-      height: 150.h,
+      height: 130.h,
       child: Row(
         children: [
           Column(
@@ -32,20 +32,22 @@ class BaseContainer extends StatelessWidget {
                 height: 15.h,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Text(
                   text,
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                  style: const TextStyle(
+                      fontSize: 22, fontWeight: FontWeight.w600),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Text(
                   text2,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.w300),
                 ),
               ),
             ],

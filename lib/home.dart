@@ -65,7 +65,74 @@ class Home extends StatelessWidget {
           text2: 'Салоны красоты\nи товары',
           color: Color(0xffFFDEDD),
         ),
+        SizedBox(
+          height: 10.h,
+        ),
+        const Text(
+          "Скоро в Malina",
+          style: TextStyle(fontWeight: FontWeight.w500, fontSize: 17),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  const BaseContainerTwo(
+                    textt: "Вакансии",
+                    colorss: Color(0xffD4E5FF),
+                  ),
+                  SizedBox(
+                    width: 10.w,
+                  ),
+                  const BaseContainerTwo(
+                    textt: "Маркет",
+                    colorss: Color(0xffFFD3BA),
+                  ),
+                  SizedBox(
+                    width: 10.w,
+                  ),
+                  const BaseContainerTwo(
+                    textt: "Цветы",
+                    colorss: Color(0xffFFDEDE),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        )
       ],
     );
+  }
+}
+
+class BaseContainerTwo extends StatelessWidget {
+  const BaseContainerTwo({
+    super.key,
+    this.colorss,
+    this.textt,
+  });
+  final Color? colorss;
+  final String? textt;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        width: 86.w,
+        height: 78.h,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(14), color: colorss),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(textt ?? ""),
+            ),
+          ],
+        ));
   }
 }
